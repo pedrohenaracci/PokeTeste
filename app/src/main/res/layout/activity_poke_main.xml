@@ -1,18 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_pokemain"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/pretoPokeMain"
     tools:context=".PokeMain">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/imagem_pokemain"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="84dp"
+        android:elevation="1dp"
+        android:src="@drawable/pato_pokemain2"
+        app:civ_border_color="@color/pretoPokeMain"
+        app:civ_border_width="8dp" />
 
-</android.support.constraint.ConstraintLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_topo"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/vermelhoPokeMain">
+
+        <ImageView
+            android:id="@+id/imagem_logo_pokemain"
+            android:layout_width="328dp"
+            android:layout_height="78dp"
+            android:layout_centerInParent="true"
+            app:srcCompat="@drawable/logo_nome" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/relative_topo"
+        android:background="@color/brancoPokeMain"
+        android:orientation="vertical"></LinearLayout>
+
+</RelativeLayout>
+
