@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/pretoPokeMain"
-    tools:context=".PokeMain">
+    tools:context=".ClassesDeActivity.PokeMain">
 
     <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
         android:id="@+id/imagem_pokemain"
@@ -37,12 +37,14 @@
             app:srcCompat="@drawable/logo_nome" />
     </RelativeLayout>
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/relative_topo"
         android:background="@color/brancoPokeMain"
-        android:orientation="vertical"></LinearLayout>
+        android:paddingTop="40dp">
+
+    </RelativeLayout>
 
 </RelativeLayout>
 

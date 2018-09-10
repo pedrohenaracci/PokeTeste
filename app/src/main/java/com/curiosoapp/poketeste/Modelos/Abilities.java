@@ -1,4 +1,8 @@
 package com.curiosoapp.poketeste.Modelos;
 
-public class Ability {
+import com.google.gson.annotations.SerializedName;
+
+public class Abilities {
+    @SerializedName("ability")
+    Ability ability;
 }

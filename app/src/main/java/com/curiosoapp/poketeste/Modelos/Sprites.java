@@ -1,5 +1,8 @@
 package com.curiosoapp.poketeste.Modelos;
 
-public class PokemonSprites {
-    public String url;
+import com.google.gson.annotations.SerializedName;
+
+public class Sprites {
+    @SerializedName("front_default")
+    public String front_default;
 }

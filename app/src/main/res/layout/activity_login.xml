@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/vermelhoPokeMain"
-    tools:context=".LoginActivity">
+    tools:context=".ClassesDeActivity.LoginActivity">
 
 
     <ImageView
@@ -76,7 +76,7 @@
         app:layout_constraintTop_toBottomOf="@+id/senha_tv" />
 
     <FrameLayout
-        android:id="@+id/layout_"
+        android:id="@+id/layout_botao"
         android:layout_width="232dp"
         android:layout_height="75dp"
         android:layout_marginBottom="8dp"
@@ -86,7 +86,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/senha_et">
+        app:layout_constraintTop_toBottomOf="@+id/senha_et"
+        >
 
         <ImageView
             android:id="@+id/imagem_botao_entrar"
