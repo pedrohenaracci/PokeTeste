@@ -1,4 +1,4 @@
-package com.curiosoapp.poketeste.ClassesDeActivity;
+package com.curiosoapp.poketeste.Activities;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;

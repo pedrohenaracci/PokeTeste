@@ -1,6 +1,6 @@
 package com.curiosoapp.poketeste.Network;
 
-import com.curiosoapp.poketeste.Modelos.PokePojo;
+import com.curiosoapp.poketeste.Models.PokePojo;
 
 import retrofit2.Call;
 import retrofit2.http.GET;

@@ -3,7 +3,7 @@ package com.curiosoapp.poketeste;
 import android.support.test.rule.ActivityTestRule;
 import android.support.test.runner.AndroidJUnit4;
 
-import com.curiosoapp.poketeste.ClassesDeActivity.PokeMain;
+import com.curiosoapp.poketeste.Activities.PokeMain;
 import com.curiosoapp.poketeste.Robots.Robot;
 
 import org.junit.Rule;

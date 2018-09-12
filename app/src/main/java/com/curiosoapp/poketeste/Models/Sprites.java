@@ -1,4 +1,4 @@
-package com.curiosoapp.poketeste.Modelos;
+package com.curiosoapp.poketeste.Models;
 
 import com.google.gson.annotations.SerializedName;
 

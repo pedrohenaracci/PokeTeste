@@ -1,27 +1,24 @@
-package com.curiosoapp.poketeste.ClassesDeActivity;
+package com.curiosoapp.poketeste.Activities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.TextView;
 
-import com.curiosoapp.poketeste.Modelos.PokePojo;
+import com.curiosoapp.poketeste.Models.PokePojo;
 import com.curiosoapp.poketeste.Network.RetrofitInstance;
 import com.curiosoapp.poketeste.Network.RetrofitService;
 import com.curiosoapp.poketeste.R;
-import com.curiosoapp.poketeste.SharedPreference.SharedPreferenceAuxiliador;
 
 import java.util.Random;
 
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
-import retrofit2.Retrofit;
 
 public class PokeMain extends AppCompatActivity {
 
     RetrofitInstance retrofit;
     RetrofitService service ;
+    private int idRndm;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,7 +27,7 @@ public class PokeMain extends AppCompatActivity {
 
     public void gerarDados(){
         Random r = new Random();
-        int idRndm = r.nextInt(300 - 1)+1;
+        idRndm = r.nextInt(300 - 1)+1;
         service = retrofit.getRetrofit().create(RetrofitService.class);
         Call<PokePojo> PokePojoCall = service.getPokemon(idRndm);
         PokePojoCall.enqueue(new Callback<PokePojo>() {
